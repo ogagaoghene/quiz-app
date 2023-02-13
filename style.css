@@ -12,24 +12,34 @@ body {
   overflow: hidden;
 }
 
-#h1 {
-  position: relative;
-  text-align: center;
-  font-size: 60px;
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #e6e6e6;
   color: #001a33;
-  margin: 30px 10px;
-  padding: 2px 0px;
+}
+
+#h1 {
+  font-size: 60px;
+  padding: 10px;
 }
 
 #tracker {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   margin: 20px 10px 10px 10px;
   padding: 0 10px;
 }
 
 .question_number {
-  position: relative;
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -41,3 +51,24 @@ body {
   margin: 0 10px 10px 10px;
   font-weight: 600;
 }
+
+#quiz_set {
+  display: none;
+}
+
+#result_box {
+
+}
+
+#result {
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+}
+
+#button_retake {
+  position: relative;
+  display: block;
+  margin: 10px auto 25px auto;
+}
+
